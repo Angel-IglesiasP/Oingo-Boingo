@@ -22,6 +22,16 @@ export default function Header() {
         />
         <Text style={styles.headerText}>Oingo Boingo {">"}</Text>
       </View>
+      <View style={styles.playIconsContainer}>
+        <Image
+          source={require("../../assets/images/playButton.png")}
+          style={styles.playIcon}
+        />
+        <Image
+          source={require("../../assets/images/shuffleButton.png")}
+          style={styles.playIcon}
+        />
+      </View>
     </View>
   );
 }
@@ -30,7 +40,7 @@ export const styles = StyleSheet.create({
   header: {
     position: "relative",
     width: "100%",
-    height: 180,
+    height: 240,
     backgroundColor: "black",
     justifyContent: "center",
     alignItems: "center",
@@ -41,7 +51,6 @@ export const styles = StyleSheet.create({
     fontWeight: "bold",
     letterSpacing: 1,
     marginTop: 10,
-    marginBottom: -30,
   },
 
   leftCorner: {
@@ -57,6 +66,7 @@ export const styles = StyleSheet.create({
     flex: 1,
     justifyContent: "center",
     alignItems: "center",
+    top: 40,
   },
 
   imageArtist: {
@@ -80,6 +90,22 @@ export const styles = StyleSheet.create({
   favoriteIcon: {
     width: 25,
     height: 25,
+    resizeMode: "contain",
+  },
+
+  playIconsContainer: {
+    flex: 1,
+    flexDirection: "row",
+    flexWrap: "wrap",
+    alignContent: "center",
+    justifyContent: "center",
+    gap: 12,
+    bottom: -20,
+  },
+
+  playIcon: {
+    width: 180,
+    height: 75,
     resizeMode: "contain",
   },
 });
