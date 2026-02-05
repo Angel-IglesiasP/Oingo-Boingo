@@ -70,8 +70,8 @@ export const styles = StyleSheet.create({
   },
 
   imageArtist: {
-    width: 80,
-    height: 80,
+    width: 85,
+    height: 85,
     borderRadius: 40,
     resizeMode: "contain",
     borderColor: "#303030",
