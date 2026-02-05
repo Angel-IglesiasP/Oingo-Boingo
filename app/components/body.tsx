@@ -7,14 +7,6 @@ export default function Index() {
     <SafeAreaView style={styles.viewBox}>
       <View>
         <Image
-          source={require("@/assets/images/dead-mans-party.jpg")}
-          style={styles.img}
-        />
-        <Text style={styles.albumText}>Dead Man's Party</Text>
-        <Text style={styles.smlText}>1985</Text>
-      </View>
-      <View>
-        <Image
           source={require("@/assets/images/aint-this-the-life.jpg")}
           style={styles.img}
         />
@@ -23,11 +15,11 @@ export default function Index() {
       </View>
       <View>
         <Image
-          source={require("@/assets/images/good-for-your-soul.jpg")}
+          source={require("@/assets/images/dead-mans-party.jpg")}
           style={styles.img}
         />
-        <Text style={styles.albumText}>Good For Your Soul</Text>
-        <Text style={styles.smlText}>1983</Text>
+        <Text style={styles.albumText}>Dead Man's Party</Text>
+        <Text style={styles.smlText}>1985</Text>
       </View>
       <View>
         <Image
@@ -36,6 +28,14 @@ export default function Index() {
         />
         <Text style={styles.albumText}>Boi-Ngo</Text>
         <Text style={styles.smlText}>1987</Text>
+      </View>
+      <View>
+        <Image
+          source={require("@/assets/images/good-for-your-soul.jpg")}
+          style={styles.img}
+        />
+        <Text style={styles.albumText}>Good For Your Soul</Text>
+        <Text style={styles.smlText}>1983</Text>
       </View>
     </SafeAreaView>
   );
@@ -47,12 +47,14 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     flexWrap: "wrap",
     backgroundColor: "black",
+    justifyContent: "center",
+    alignItems: "center",
     gap: 10,
     padding: 10,
   },
   img: {
-    width: 190,
-    height: 190,
+    width: 180,
+    height: 180,
     borderRadius: 7,
   },
   albumText: {
