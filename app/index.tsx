@@ -1,4 +1,5 @@
-import { View } from "react-native";
+import { StyleSheet, View } from "react-native";
+import { SafeAreaView } from "react-native-safe-area-context";
 import Body from "./components/body";
 import Footer from "./components/Footer";
 import Header from "./components/header";
@@ -6,11 +7,24 @@ import Band from "./components/iphoneUI";
 
 export default function Index() {
   return (
-    <View style={{ backgroundColor: "black" }}>
+    <SafeAreaView style={styles.screen} edges={["top", "bottom"]}>
       <Band />
       <Header />
-      <Body />
+      <View style={styles.content}>
+        <Body />
+      </View>
       <Footer />
-    </View>
+    </SafeAreaView>
   );
 }
+
+const styles = StyleSheet.create({
+  screen: {
+    flex: 1,
+    backgroundColor: "black",
+  },
+  content: {
+    flex: 1,
+    overflow: "hidden",
+  },
+});

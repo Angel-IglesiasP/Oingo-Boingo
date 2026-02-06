@@ -50,7 +50,10 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     alignItems: "center",
     gap: 10,
-    padding: 10,
+    paddingTop: 0,
+    paddingHorizontal: 10,
+    paddingBottom: 10,
+    marginTop: -40,
   },
   img: {
     width: 180,

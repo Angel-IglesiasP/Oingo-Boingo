@@ -16,7 +16,7 @@ export default function Band() {
 export const styles = StyleSheet.create({
   band: {
     width: "100%",
-    height: 25,
+    height: 20,
     backgroundColor: "black",
     flexDirection: "row",
     flexWrap: "wrap",
@@ -24,17 +24,17 @@ export const styles = StyleSheet.create({
     alignItems: "center",
     alignContent: "center",
     paddingHorizontal: 15,
+    top: 5,
+    position: "absolute",
   },
   bandText: {
     color: "white",
     fontWeight: 600,
     left: 15,
-    top: 3,
   },
   bandImage: {
     width: 60,
     height: 50,
     resizeMode: "contain",
-    top: 3,
   },
 });

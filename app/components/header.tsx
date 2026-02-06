@@ -40,17 +40,21 @@ export const styles = StyleSheet.create({
   header: {
     position: "relative",
     width: "100%",
-    height: 240,
+    minHeight: 190,
     backgroundColor: "black",
-    justifyContent: "center",
+    justifyContent: "flex-start",
     alignItems: "center",
+    top: -5,
+    paddingTop: 40,
   },
   headerText: {
     color: "#f2efef",
     fontSize: 26,
     fontWeight: "bold",
     letterSpacing: 1,
-    marginTop: 10,
+    marginTop: 5,
+    marginBottom: 10,
+    textAlign: "center",
   },
 
   leftCorner: {
@@ -63,17 +67,16 @@ export const styles = StyleSheet.create({
   },
 
   imageContainer: {
-    flex: 1,
     justifyContent: "center",
     alignItems: "center",
-    top: 40,
+    position: "relative",
   },
 
   imageArtist: {
     width: 85,
     height: 85,
     borderRadius: 40,
-    resizeMode: "contain",
+    resizeMode: "cover",
     borderColor: "#303030",
     borderWidth: 1,
   },
@@ -94,13 +97,11 @@ export const styles = StyleSheet.create({
   },
 
   playIconsContainer: {
-    flex: 1,
     flexDirection: "row",
-    flexWrap: "wrap",
     alignContent: "center",
     justifyContent: "center",
-    gap: 12,
-    bottom: -20,
+    gap: 10,
+    marginTop: -15,
   },
 
   playIcon: {
