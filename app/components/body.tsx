@@ -3,14 +3,13 @@ import { SafeAreaView } from "react-native-safe-area-context";
 
 export default function Index() {
   return (
-    // <View style={styles.viewBox}></View>
     <SafeAreaView style={styles.viewBox}>
       <View>
         <Image
           source={require("@/assets/images/aint-this-the-life.jpg")}
           style={styles.img}
         />
-        <Text style={styles.albumText}>Ain't This The Life - Single</Text>
+        <Text style={styles.albumText}>Ain&apos;t This The Life - Single</Text>
         <Text style={styles.smlText}>1980</Text>
       </View>
       <View>
@@ -18,7 +17,7 @@ export default function Index() {
           source={require("@/assets/images/dead-mans-party.jpg")}
           style={styles.img}
         />
-        <Text style={styles.albumText}>Dead Man's Party</Text>
+        <Text style={styles.albumText}>Dead Man&apos;s Party</Text>
         <Text style={styles.smlText}>1985</Text>
       </View>
       <View>
