@@ -1,6 +1,6 @@
 import { Image, StyleSheet, Text, View } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
-import Footer from "./_layout";
+// import Footer from "./_layout";
 
 export default function Index() {
   return (
@@ -73,7 +73,7 @@ export default function Index() {
         </View>
       </SafeAreaView>
 
-      <Footer />
+      {/* <Footer /> */}
     </SafeAreaView>
   );
 }
