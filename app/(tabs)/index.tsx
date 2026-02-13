@@ -111,7 +111,7 @@ const styles = StyleSheet.create({
     fontSize: 30,
     fontWeight: "500",
     position: "absolute",
-    marginTop: 20,
+    marginTop: 10,
     marginLeft: 5,
   },
   subheaderText: {
@@ -131,11 +131,10 @@ const styles = StyleSheet.create({
     alignItems: "center",
   },
   avatarIcon: {
-    width: 35,
-    height: 35,
+    width: 38,
+    height: 38,
     borderRadius: 25,
     resizeMode: "contain",
-    marginTop: 13,
   },
   bodyHome: {
     flexGrow: 0,

@@ -1,10 +1,13 @@
 import { Image, StyleSheet, Text, View } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 // import Footer from "./_layout";
+import React from "react";
+import Band from "../components/iphoneUI";
 
 export default function Index() {
   return (
     <SafeAreaView style={styles.screen} edges={["top", "bottom"]}>
+      <Band />
       <View style={styles.header}>
         <Text style={styles.leftCorner}>{"<"} Artists </Text>
         <View style={styles.iconContainer}>
@@ -98,7 +101,6 @@ const styles = StyleSheet.create({
     paddingTop: 0,
     paddingHorizontal: 10,
     paddingBottom: 10,
-    marginTop: -40,
   },
   img: {
     width: 180,
@@ -119,12 +121,11 @@ const styles = StyleSheet.create({
     backgroundColor: "black",
     justifyContent: "flex-start",
     alignItems: "center",
-    top: -5,
     paddingTop: 40,
   },
   headerText: {
     color: "#f2efef",
-    fontSize: 26,
+    fontSize: 30,
     fontWeight: "bold",
     letterSpacing: 1,
     marginTop: 5,
@@ -134,8 +135,8 @@ const styles = StyleSheet.create({
 
   leftCorner: {
     position: "absolute",
-    top: 15,
-    left: 15,
+    marginTop: 15,
+    marginLeft: 15,
     color: "#df4343",
     fontSize: 16,
     fontWeight: "500",
@@ -176,7 +177,7 @@ const styles = StyleSheet.create({
     alignContent: "center",
     justifyContent: "center",
     gap: 10,
-    marginTop: -15,
+    marginTop: 0,
   },
 
   playIcon: {
