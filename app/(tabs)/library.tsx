@@ -39,7 +39,7 @@ export default function Index() {
         </View>
       </View>
 
-      <SafeAreaView style={styles.viewBox}>
+      <View style={styles.viewBox}>
         <View>
           <Image
             source={require("@/assets/images/aint-this-the-life.jpg")}
@@ -74,7 +74,23 @@ export default function Index() {
           <Text style={styles.albumText}>Good For Your Soul</Text>
           <Text style={styles.smlText}>1983</Text>
         </View>
-      </SafeAreaView>
+        <View>
+          <Image
+            source={require("@/assets/images/only-a-lad.jpg")}
+            style={styles.img}
+          />
+          <Text style={styles.albumText}>Only a Lad</Text>
+          <Text style={styles.smlText}>1987</Text>
+        </View>
+        <View>
+          <Image
+            source={require("@/assets/images/alive.jpg")}
+            style={styles.img}
+          />
+          <Text style={styles.albumText}>Good For Your Soul</Text>
+          <Text style={styles.smlText}>1983</Text>
+        </View>
+      </View>
 
       {/* <Footer /> */}
     </SafeAreaView>
@@ -98,7 +114,7 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     alignItems: "center",
     gap: 10,
-    paddingTop: 0,
+    paddingTop: 15,
     paddingHorizontal: 10,
     paddingBottom: 10,
   },
@@ -135,8 +151,9 @@ const styles = StyleSheet.create({
 
   leftCorner: {
     position: "absolute",
-    marginTop: 15,
-    marginLeft: 15,
+    top: 15,
+    marginLeft: 20,
+    left: 0,
     color: "#df4343",
     fontSize: 16,
     fontWeight: "500",
@@ -155,6 +172,7 @@ const styles = StyleSheet.create({
     resizeMode: "cover",
     borderColor: "#303030",
     borderWidth: 1,
+    marginTop: 10,
   },
 
   iconContainer: {

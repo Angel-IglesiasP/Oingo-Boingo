@@ -18,7 +18,7 @@ export default function Home() {
         </View>
       </View>
       {/* Body component top*/}
-      <SafeAreaView style={styles.bodyHome}>
+      <View style={styles.bodyHome}>
         <View>
           <Text style={styles.smlText}>Made for You</Text>
           <Image
@@ -33,10 +33,10 @@ export default function Home() {
             style={styles.imgTopBody}
           />
         </View>
-      </SafeAreaView>
+      </View>
       {/* Body component bottom*/}
       <Text style={styles.RecentlyPlayedText}>Recently Played {">"}</Text>
-      <SafeAreaView style={styles.bodyHome}>
+      <View style={styles.bodyHome}>
         <View>
           <Image
             source={require("@/assets/images/album1.png")}
@@ -61,34 +61,34 @@ export default function Home() {
           <Text style={styles.albumText}>Oingo Boingo Brothars</Text>
           <Text style={styles.smlText}>Zetai 100%!</Text>
         </View>
-      </SafeAreaView>
+      </View>
       <Text style={styles.RecentlyPlayedText}>Explore New Genres {">"}</Text>
-      <SafeAreaView style={styles.bodyHome}>
+      <View style={styles.bodyHome}>
         <View>
           <Image
-            source={require("@/assets/images/album1.png")}
+            source={require("@/assets/images/album4.png")}
             style={styles.imgBottomBody}
           />
-          <Text style={styles.albumText}>Best of Queen</Text>
-          <Text style={styles.smlText}>80&apos;s Classics</Text>
+          <Text style={styles.albumText}>Edgerunners</Text>
+          <Text style={styles.smlText}>Sad</Text>
         </View>
         <View>
           <Image
-            source={require("@/assets/images/album2.png")}
+            source={require("@/assets/images/album5.png")}
             style={styles.imgBottomBody}
           />
-          <Text style={styles.albumText}>Frank Sinatra unleashed</Text>
-          <Text style={styles.smlText}>I did it my way</Text>
+          <Text style={styles.albumText}>The Beatles</Text>
+          <Text style={styles.smlText}>Paul Maccartney explodes</Text>
         </View>
         <View>
           <Image
-            source={require("@/assets/images/album3.png")}
+            source={require("@/assets/images/album6.png")}
             style={styles.imgBottomBody}
           />
-          <Text style={styles.albumText}>Oingo Boingo Brothars</Text>
-          <Text style={styles.smlText}>Zetai 100%!</Text>
+          <Text style={styles.albumText}>Elvis</Text>
+          <Text style={styles.smlText}>Oh Mamma!</Text>
         </View>
-      </SafeAreaView>
+      </View>
     </SafeAreaView>
   );
 }
@@ -102,7 +102,7 @@ const styles = StyleSheet.create({
   header: {
     position: "relative",
     width: "100%",
-    minHeight: 95,
+    minHeight: 100,
     backgroundColor: "black",
     top: 0,
   },
@@ -112,7 +112,7 @@ const styles = StyleSheet.create({
     fontWeight: "500",
     position: "absolute",
     marginTop: 10,
-    marginLeft: 5,
+    marginLeft: 8,
   },
   subheaderText: {
     color: "#fcfbfb",
@@ -145,22 +145,20 @@ const styles = StyleSheet.create({
     alignItems: "flex-start",
     marginTop: 5,
     marginLeft: 5,
-    paddingHorizontal: 4,
-    gap: 5,
+    paddingHorizontal: 10,
+    gap: 10,
   },
   imgTopBody: {
-    width: 230,
-    height: 300,
+    width: 260,
+    height: 330,
     borderRadius: 10,
     marginTop: 3,
-    resizeMode: "contain",
-    marginLeft: 2,
+    resizeMode: "stretch",
   },
   smlText: {
     color: "white",
     opacity: 0.5,
     marginBottom: 3,
-    marginLeft: 8,
     marginTop: 3,
   },
   RecentlyPlayedText: {
@@ -175,11 +173,9 @@ const styles = StyleSheet.create({
     height: 150,
     borderRadius: 10,
     marginTop: 3,
-    marginLeft: 5,
   },
   albumText: {
     color: "white",
     marginTop: 3,
-    marginLeft: 8,
   },
 });

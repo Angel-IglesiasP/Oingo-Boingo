@@ -17,7 +17,7 @@ export default function NewScreen() {
           />
         </View>
       </View>
-      <SafeAreaView style={styles.bodyHome}>
+      <View style={styles.bodyHome}>
         <View>
           <Text style={styles.smlText}>SUPER BOWL LX HALFTIME SHOW</Text>
           <Text style={styles.albumText}>
@@ -40,12 +40,12 @@ export default function NewScreen() {
             style={styles.imgTopBody}
           />
         </View>
-      </SafeAreaView>
+      </View>
       {/* Body component bottom*/}
       <Text style={styles.RecentlyPlayedText}>
         Bad Bunny&apos;s Road to Halftime
       </Text>
-      <SafeAreaView style={styles.bodyHome}>
+      <View style={styles.bodyHome}>
         <View>
           <Image
             source={require("@/assets/images/bad1.png")}
@@ -67,9 +67,9 @@ export default function NewScreen() {
           />
           <Text style={styles.smlTextNew}>Radio</Text>
         </View>
-      </SafeAreaView>
+      </View>
       <Text style={styles.RecentlyPlayedText}>World of Bad Bunny {">"}</Text>
-      <SafeAreaView style={styles.bodyHome}>
+      <View style={styles.bodyHome}>
         <View>
           <Image
             source={require("@/assets/images/bad4.png")}
@@ -91,7 +91,31 @@ export default function NewScreen() {
           />
           <Text style={styles.smlTextNew}>Si tu novia no</Text>
         </View>
-      </SafeAreaView>
+      </View>
+      <Text style={styles.RecentlyPlayedText}>You Might Also Like{">"}</Text>
+      <View style={styles.bodyHome}>
+        <View>
+          <Image
+            source={require("@/assets/images/bad4.png")}
+            style={styles.imgBottomBody}
+          />
+          <Text style={styles.smlTextNew}>Ay mi gatito miau miau</Text>
+        </View>
+        <View>
+          <Image
+            source={require("@/assets/images/bad5.png")}
+            style={styles.imgBottomBody}
+          />
+          <Text style={styles.smlTextNew}>Los skibidi se pusieron toilet</Text>
+        </View>
+        <View>
+          <Image
+            source={require("@/assets/images/bad6.png")}
+            style={styles.imgBottomBody}
+          />
+          <Text style={styles.smlTextNew}>Si tu novia no</Text>
+        </View>
+      </View>
     </SafeAreaView>
   );
 }
@@ -100,6 +124,7 @@ const styles = StyleSheet.create({
   screen: {
     flex: 1,
     backgroundColor: "black",
+    overflow: "hidden",
   },
   header: {
     position: "relative",
@@ -113,7 +138,7 @@ const styles = StyleSheet.create({
     fontWeight: "500",
     position: "absolute",
     marginTop: 10,
-    marginLeft: 5,
+    marginLeft: 8,
   },
   iconContainer: {
     position: "absolute",
@@ -136,8 +161,8 @@ const styles = StyleSheet.create({
     justifyContent: "flex-start",
     alignItems: "flex-start",
     marginLeft: 5,
-    paddingHorizontal: 4,
-    gap: 5,
+    paddingHorizontal: 10,
+    gap: 10,
   },
   imgTopBody: {
     width: 330,
@@ -145,27 +170,25 @@ const styles = StyleSheet.create({
     borderRadius: 10,
     marginTop: 3,
     resizeMode: "cover",
-    marginLeft: 2,
   },
   smlText: {
     color: "white",
     opacity: 0.5,
     marginBottom: 3,
-    marginLeft: 8,
     marginTop: 3,
     fontSize: 10,
     fontWeight: "300",
   },
   smlTextNew: {
     color: "white",
-    marginLeft: 5,
-    marginTop: 3,
+    marginTop: 4,
     fontSize: 12,
     fontWeight: "200",
   },
   RecentlyPlayedText: {
     marginTop: 20,
     marginLeft: 15,
+    marginBottom: 5,
     color: "#fcfbfb",
     fontSize: 20,
     fontWeight: "500",
@@ -174,14 +197,12 @@ const styles = StyleSheet.create({
     width: 160,
     height: 90,
     borderRadius: 10,
-    marginTop: 3,
-    marginLeft: 5,
+    marginTop: 0,
     resizeMode: "stretch",
   },
   albumText: {
     color: "white",
     marginTop: 3,
-    marginLeft: 8,
     fontSize: 20,
     fontWeight: "500",
   },
