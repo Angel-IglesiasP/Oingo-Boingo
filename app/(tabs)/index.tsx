@@ -1,6 +1,7 @@
 import { Image, StyleSheet, Text, View } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import Band from "../components/iphoneUI";
+import SongBanner from "../components/songBanner";
 
 export default function Home() {
   return (
@@ -89,6 +90,7 @@ export default function Home() {
           <Text style={styles.smlText}>Oh Mamma!</Text>
         </View>
       </View>
+      <SongBanner />
     </SafeAreaView>
   );
 }

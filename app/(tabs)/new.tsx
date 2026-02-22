@@ -1,7 +1,8 @@
-import React from "react";
+﻿import React from "react";
 import { Image, StyleSheet, Text, View } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import Band from "../components/iphoneUI";
+import SongBanner from "../components/songBanner";
 
 export default function NewScreen() {
   return (
@@ -96,26 +97,27 @@ export default function NewScreen() {
       <View style={styles.bodyHome}>
         <View>
           <Image
-            source={require("@/assets/images/bad4.png")}
+            source={require("@/assets/images/new1.jpg")}
             style={styles.imgBottomBody}
           />
           <Text style={styles.smlTextNew}>Ay mi gatito miau miau</Text>
         </View>
         <View>
           <Image
-            source={require("@/assets/images/bad5.png")}
+            source={require("@/assets/images/new2.jpg")}
             style={styles.imgBottomBody}
           />
           <Text style={styles.smlTextNew}>Los skibidi se pusieron toilet</Text>
         </View>
         <View>
           <Image
-            source={require("@/assets/images/bad6.png")}
+            source={require("@/assets/images/new3.jpg")}
             style={styles.imgBottomBody}
           />
           <Text style={styles.smlTextNew}>Si tu novia no</Text>
         </View>
       </View>
+      <SongBanner />
     </SafeAreaView>
   );
 }

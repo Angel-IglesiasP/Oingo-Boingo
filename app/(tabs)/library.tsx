@@ -1,8 +1,8 @@
+﻿import React from "react";
 import { Image, StyleSheet, Text, View } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
-// import Footer from "./_layout";
-import React from "react";
 import Band from "../components/iphoneUI";
+import SongBanner from "../components/songBanner";
 
 export default function Index() {
   return (
@@ -91,8 +91,7 @@ export default function Index() {
           <Text style={styles.smlText}>1983</Text>
         </View>
       </View>
-
-      {/* <Footer /> */}
+      <SongBanner />
     </SafeAreaView>
   );
 }
